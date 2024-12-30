@@ -1,1 +1,23 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Generator</title>
+</head>
+<body>
+  <h1>Word Generator</h1>
+  <form id="generator-form">
+    <label for="consonants">Consonants (C):</label>
+    <input type="text" id="consonants" placeholder="Enter consonants" required><br><br>
+    <label for="vowels">Vowels (V):</label>
+    <input type="text" id="vowels" placeholder="Enter vowels" required><br><br>
+    <label for="pattern">Pattern:</label>
+    <input type="text" id="pattern" placeholder="Enter pattern (e.g., (C(C))V(C))" required><br><br>
+    <button type="button" id="generate">Generate Words</button>
+  </form>
+  <h2>Generated Words:</h2>
+  <div id="output"></div>
+  <script src="script.js"></script>
+</body>
+</html>
